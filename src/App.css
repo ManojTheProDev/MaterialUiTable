@@ -1,0 +1,32 @@
+*,
+body,
+div,
+h4,
+span,
+input {
+  box-sizing: border-box;
+}
+
+.progress-bar-container {
+  width: 500px;
+  height: 40px;
+  border: 1px solid;
+}
+
+.progress-bar {
+  height: 38px;
+  animation: fillProgress 5s 1;
+  position: relative;
+  background-color: red;
+}
+
+@keyframes fillProgress {
+  from {
+    background-color: transparent;
+    width: 0;
+  }
+  to {
+    background-color: red;
+    width: 498px;
+  }
+}
